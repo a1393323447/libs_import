@@ -1,0 +1,9 @@
+# Read about `build.yaml` at https://pub.dev/packages/build_config
+targets:
+  $default:
+    builders:
+      # Configure the builder `pkg_name|builder_name`
+      libs_import|static_function:
+        # Only run this builder on the specified input.
+        generate_for:
+          - lib/*.dart

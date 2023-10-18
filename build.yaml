@@ -1,0 +1,8 @@
+builders:
+  static_function:
+    import: "package:libs_import/builder.dart"
+    builder_factories: ["importAllBuilder"]
+    build_extensions: {".dart": ["import_all.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]
